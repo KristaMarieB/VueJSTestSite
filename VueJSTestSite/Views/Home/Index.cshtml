@@ -7,4 +7,11 @@
     <div id="app">
         {{ message }}
     </div>
+    <br />
+    <div id="app-2">
+        @* v- is called directive has multiple attributes *@
+        <span v-bind:title="message">
+            Hover mouse to see dynamically bound title!
+        </span>
+    </div>
 </div>
