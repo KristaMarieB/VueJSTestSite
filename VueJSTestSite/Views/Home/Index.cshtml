@@ -4,6 +4,16 @@
 
 <div class="jumbotron">
     <h1 id="header">Testing Purposes</h1>
+    <div id="app-7">
+        <ol>
+            <todo-item v-for="item in groceryList"
+                       v-bind:todo="item"
+                       v-bind:key="item.id"></todo-item>
+        </ol>
+    </div>
+
+</div>
+<div id="firstPractice">
     @*
         Practice 1:
         <div id="app">
@@ -39,7 +49,7 @@
 
     @*writes directly to the page*@
     @*<div id="app-6">
-        <p>{{ message }}</p>
-        <input v-model="message">
-    </div>*@
+            <p>{{ message }}</p>
+            <input v-model="message">
+        </div>*@
 </div>
